@@ -136,7 +136,7 @@
     margin: 0 0 8px 0;
   }
   .place__image {
-    max-width: 300px;
+    max-width: 320px;
   }
   .place__paragraph {
     font-size: 16px;
@@ -150,5 +150,7 @@
   .place__link-button {
     padding: 14px 7px;
     font-size: 14px;
+    width: 85%;
+    align-self: center;
   }
 }
