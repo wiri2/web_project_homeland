@@ -65,16 +65,12 @@
   background-image: linear-gradient(to right, #0278fe 0%, #003a7b 100%);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
 }
 .place__link-button:hover {
   opacity: 80%;
-}
-.place__link-paragraph {
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 600;
-  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,43 +113,5 @@
   }
   .place__image {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .place {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    padding-bottom: 21%;
-  }
-  .place__artists {
-    margin: 0 6.6%;
-  }
-  .place__title {
-    font-size: 32px;
-    margin: 0 6.6%;
-  }
-  .place__subtitle {
-    margin: 0 0 8px 0;
-  }
-  .place__image {
-    max-width: 300px;
-  }
-  .place__paragraph {
-    font-size: 16px;
-    margin: 0 6.6%;
-  }
-
-  .place__link {
-    max-width: 100%;
-    margin: 0 6.6%;
-  }
-  .place__link-button {
-    padding: 14px 7px;
-  }
-
-  .place__link-paragraph {
-    font-size: 14px;
   }
 }
