@@ -1,0 +1,11 @@
+.gallery {
+  padding-top: 9.2%;
+  margin: 0 3.5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.gallery__item {
+  margin: 0;
+}
