@@ -71,6 +71,7 @@
 }
 .place__link-button:hover {
   opacity: 0.7;
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
 }
 
 @media screen and (max-width: 768px) {
