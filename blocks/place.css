@@ -1,0 +1,159 @@
+.place {
+  padding-bottom: 11.1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "title artist"
+    "image paragraphs"
+    "link .";
+  gap: 48px 40px;
+}
+.place__title {
+  grid-area: title;
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0;
+  max-width: 370px;
+}
+
+.place__artists {
+  grid-area: artist;
+  align-self: flex-end;
+}
+
+.place__subtitle {
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.place__artist-paragraph {
+  font-size: 18px;
+  margin: 0;
+}
+.place__link-image {
+  grid-area: image;
+}
+.place__image {
+  box-shadow: 10px 10px 25px #000;
+  max-width: 100%;
+  grid-row: 2/4;
+}
+.place__image:hover {
+  opacity: 80%;
+}
+.place__paragraphs {
+  grid-area: paragraphs;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.place__paragraph {
+  font-size: 18px;
+  margin: 0;
+}
+
+.place__link {
+  grid-area: link;
+  text-decoration: none;
+  max-width: 320px;
+}
+
+.place__link-button {
+  padding: 18px 30px;
+  background-image: linear-gradient(to right, #0278fe 0%, #003a7b 100%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #000;
+}
+.place__link-button:hover {
+  opacity: 80%;
+}
+.place__link-paragraph {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    gap: 48px 28px;
+    padding-bottom: 13.1%;
+  }
+  .place__title {
+    font-size: 42px;
+  }
+  .place__subtitle {
+    font-size: 12px;
+  }
+  .place__artist-paragraph {
+    font-size: 18px;
+  }
+  .place__image {
+    max-width: 300px;
+  }
+  .place__paragraph {
+    font-size: 16px;
+  }
+
+  .place__link-button {
+    padding: 18px 20px;
+  }
+  .place__link {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .place__artists {
+    align-self: flex-start;
+  }
+  .place__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 21%;
+  }
+  .place__artists {
+    margin: 0 6.6%;
+  }
+  .place__title {
+    font-size: 32px;
+    margin: 0 6.6%;
+  }
+  .place__subtitle {
+    margin: 0 0 8px 0;
+  }
+  .place__image {
+    max-width: 300px;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    margin: 0 6.6%;
+  }
+
+  .place__link {
+    max-width: 100%;
+    margin: 0 6.6%;
+  }
+  .place__link-button {
+    padding: 14px 7px;
+  }
+
+  .place__link-paragraph {
+    font-size: 14px;
+  }
+}
